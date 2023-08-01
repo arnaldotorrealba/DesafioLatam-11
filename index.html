@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="stylesheet" href="./assets/css/style.css" />
+        <script defer src="./assets/js/script.js"></script>
+        <title>Calculando El Total</title>
+    </head>
+    <body>
+        <section class="container">
+            <div class="product-card">
+                <img
+                    src="./assets/imgs/product01.jpg"
+                    alt="Headset JBL model T760NC with Bluetooth and noise cancelling"
+                />
+                <div class="product-title">
+                    <h2>Headset JBL Bluetooth</h2>
+                </div>
+                <form action="">
+                    <div class="input-container">
+                        <input
+                            class="text-input"
+                            id="quantity"
+                            type="text"
+                            placeholder="Ingrese Cantidad:"
+                            autocomplete="off"
+                            required
+                        />
+                        <label for="quantity" class="label">Cantidad</label>
+                    </div>
+                    <div class="input-container">
+                        <input
+                            class="text-input"
+                            id="color"
+                            type="text"
+                            placeholder="Ingrese Color:"
+                            autocomplete="off"
+                            required
+                        />
+                        <label for="color" class="label">Color</label>
+                    </div>
+                </form>
+                <p>Precio: <span id="price"></span></p>
+                <button onclick="total()">Calcular Total</button>
+            </div>
+            <div class="total-card">
+                <p id="total-p">Total: <span></span></p>
+                <p id="quantity-p">Cantidad: <span></span></p>
+                <div class="color-box">
+                    <p id="color-p">Color:</p>
+                    <div id="color-circle" class="color-circle"></div>
+                </div>
+            </div>
+        </section>
+    </body>
+</html>
